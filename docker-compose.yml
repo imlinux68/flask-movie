@@ -28,11 +28,3 @@ services:
     restart: always
     stdin_open: true 
     tty: true
-
-
-networks:
-  app-net:
-    driver: bridge
-
-volumes:
-  db-data:
