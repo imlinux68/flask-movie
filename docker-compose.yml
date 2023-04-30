@@ -7,6 +7,8 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=admin
       - MONGO_INITDB_ROOT_PASSWORD=root
+      
+      
   mongo-express:
     image: mongo-express
     ports:
@@ -18,6 +20,7 @@ services:
     depends_on:
       - "mongodb"
     restart: unless-stopped
+    
 
   flaskapp:
     image: imlinux68/flaskmongo-app
